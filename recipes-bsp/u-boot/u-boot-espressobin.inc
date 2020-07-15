@@ -15,7 +15,7 @@ SRC_URI_append = " file://0001-Include-menuconfig-options-when-checking-for-Kcon
 SRC_URI_append = " file://0002-Set-HOSTARCH-and-ARCH-when-making-env-target.patch.mender"
 
 do_mender_uboot_auto_configure_fix () {
-    patch -N "${WORKDIR}/uboot_auto_configure.sh" "${WORKDIR}/0002-Set-HOSTARCH-and-ARCH-when-making-env-target.patch.mender" || true
+    patch -N "${WORKDIR}/uboot_auto_configure.sh" "${WORKDIR}/0002-Set-HOSTARCH-and-ARCH-when-making-env-target.patch.mender"
     sed -i 's/${ARCH}/'${TUNE_ARCH_32}'/g' "${WORKDIR}/uboot_auto_configure.sh"
 }
 
