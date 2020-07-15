@@ -11,7 +11,6 @@ SRC_URI_append = " file://0003-Added-fdt_addr_r-and-kernel_addr_r-to-CONFIG_EXTR
 #
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/mender:"
-SRC_URI_append = " file://0001-Include-menuconfig-options-when-checking-for-Kconfig.patch.mender"
 SRC_URI_append = " file://0002-Set-HOSTARCH-and-ARCH-when-making-env-target.patch.mender"
 
 do_mender_uboot_auto_configure_fix () {
