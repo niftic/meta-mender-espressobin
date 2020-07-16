@@ -1,12 +1,4 @@
 #
-# Patches for Mender u-boot
-#
-
-FILESEXTRAPATHS_prepend := "${THISDIR}/patches:"
-SRC_URI_append = " file://0002-Removed-default-environment-vars.patch"
-SRC_URI_append = " file://0003-Added-fdt_addr_r-and-kernel_addr_r-to-CONFIG_EXTRA_E.patch"
-
-#
 # Patches for Mender auto-configuration scripts
 #
 
